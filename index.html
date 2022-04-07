@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <span>Syno</span>
+                </div>
+                <p>le générateur de synonymes</p>
+                <ul>
+                    <li>Github</li>
+                    <li>API</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="user">
+                    <img src="./assets/imgs/user.png" alt="">
+                </div>
+            </nav>
+            <div class="blocks">
+                <div class="input-container">
+                    <button id="delete" onclick="deleteText()"><img src="./assets/imgs/delete.png" alt=""></button>
+                    <textarea
+                        name=""
+                        id="text"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <button onclick="submitButton()">envoyer</button>
+                </div>
+                <div class="text-area-container">
+                    <textarea
+                        name=""
+                        id="text-area"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+            </div>
+            <div class="icon-container">
+                <div class="icon">
+                    <img src="./assets/imgs/like.png" alt="">
+                </div>
+                <img src="./assets/imgs/facebook.png" alt="">
+                <div class="icon"></div>
+                <img src="./assets/imgs/twitter.png" alt="">
+                <div class="icon"></div>
+                <img src="./assets/imgs/whatsapp.png" alt="">
+                <div class="icon"></div>
+                <img src="./assets/imgs/share.png" alt="">
+                <div class="icon"></div>
+            </div>
+            <footer>
+                <span>Tous droits réservés Syno-app</span>
+            </footer>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
