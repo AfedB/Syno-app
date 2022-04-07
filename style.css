@@ -11,22 +11,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
   background-color: rgb(203, 203, 203);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: rgba(108, 108, 108, 0.644);
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1e1e1e;
+  background: rgb(255, 255, 255);
+}
 
-
+::selection {
+  color: #1e1e1e;
+  background: rgb(255, 255, 255);
+}
 body {
   /* overflow: hidden; */
   font-family: var(--ff);
   user-select: none;
-  background: url(./assets/imgs/low-poly-grid-haikei-body.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #1e1e1e;
   caret-color: rgb(151 151 151 / 39%);
 }
 
@@ -37,6 +43,7 @@ h3,
 span,
 p {
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.51);
+  color: white;
 }
 img {
   /* filter: drop-shadow(0px 2px 3px rgb(65, 65, 65)); */
@@ -47,10 +54,8 @@ nav {
   align-items: center;
   padding: 0.5rem;
   background: url(./assets/imgs/low-poly-grid-haikei-textarea2.svg);
-  box-shadow: 0px 6px 26px -2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 6px 26px -2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 6px 26px -2px rgba(0, 0, 0, 0.25);
   transition: background 1s ease-in-out;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.289);
 }
 nav:hover {
   background: url(./assets/imgs/low-poly-grid-haikei-textarea.svg);
@@ -59,7 +64,7 @@ nav:hover {
   flex: 1;
 }
 .logo span {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 800;
   cursor: pointer;
@@ -92,6 +97,7 @@ nav ul {
 }
 nav ul li {
   cursor: pointer;
+  color: white;
 }
 
 .user {
@@ -104,13 +110,10 @@ nav ul li {
 .wrapper {
   width: 100%;
   min-height: 100vh;
-  background: url(./assets/imgs/blurry-gradient-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: inset 1px 0px 24px -4px rgba(187, 187, 187, 0.63);
-  box-shadow: inset 1px 0px 24px -4px rgba(187, 187, 187, 0.63);
+  background-color: #1e1e1e;
   position: relative;
+  border-left: 1px solid rgba(108, 108, 108, 0.289);
+  border-right: 1px solid rgba(108, 108, 108, 0.289);
 }
 .blocks {
   max-width: 800px;
@@ -125,6 +128,7 @@ nav ul li {
 .blocks button {
   margin-top: 1rem;
   align-self: center;
+  color: white;
 }
 .blocks button:focus {
   outline: rgb(255, 255, 255);
@@ -138,22 +142,18 @@ textarea {
   max-width: 340px;
   height: 238px;
   border-radius: 20px;
-  border: 1px solid #c0c0c07d;
+  border: 1px solid rgba(108, 108, 108, 0.289);
   padding: 1rem;
   resize: none;
   font-family: var(--ff);
   font-size: 1.5rem;
   outline: transparent;
-  -webkit-box-shadow: 0px 17px 21px -2px rgba(162, 162, 162, 0.61);
-  box-shadow: 0px 17px 21px -2px rgba(162, 162, 162, 0.61);
-  background: url(./assets/imgs/low-poly-grid-haikei-textarea.svg);
-  background-position: center;
-  background-size: cover;
+  background-color: #1e1e1e;
   transition: all 2s ease-in-out;
+  color: white;
 }
 textarea:hover {
   border: 1px solid #c0c0c0;
-  box-shadow: 0px 17px 21px -2px rgba(162, 162, 162, 0.61);
   background: url(./assets/imgs/low-poly-grid-haikei-textarea2.svg);
   background-position: center;
   background-size: cover;
@@ -170,20 +170,18 @@ textarea:hover {
   background-color: rgb(255, 255, 255);
   padding: 5px 20px;
   border-radius: 20px;
-  border: none;
+  border: 1px solid rgba(108, 108, 108, 0.289);
   margin: 1rem;
   background: url(./assets/imgs/low-poly-grid-haikei-textarea.svg);
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0px 17px 21px -2px rgba(162, 162, 162, 0.61);
-  box-shadow: 0px 17px 21px -2px rgba(162, 162, 162, 0.61);
   cursor: pointer;
 }
 .input-container button:hover {
   background: url(./assets/imgs/low-poly-grid-haikei-textarea2.svg);
   background-position: center;
   background-size: cover;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .input-container button:active {
@@ -201,6 +199,7 @@ textarea:hover {
   position: absolute;
   bottom: 2.4rem;
   left: -2rem;
+  border: 1px solid rgba(192, 192, 192, 0);
 }
 
 .icon-container {
@@ -252,10 +251,8 @@ footer {
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
-    background: url(./assets/imgs/blurry-gradient-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #1e1e1e;
+
     box-shadow: none;
   }
   .blocks {
@@ -271,6 +268,6 @@ footer {
     margin-top: 17rem;
   }
   nav {
-    border: 1px solid whitesmoke;
+    border-bottom: 1px solid rgba(108, 108, 108, 0.289);
   }
 }
